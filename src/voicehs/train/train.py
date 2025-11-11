@@ -7,13 +7,13 @@ from f5_tts.model.dataset import load_dataset
 from f5_tts.model.utils import get_tokenizer
 from f5_tts.model.cfm import CFM
 
-from src.train.lora import CFMLora, TrainerLora, lora_config
+from src.voicehs.train.lora import CFMLora, TrainerLora, lora_config
 
-project_root = Path(__file__).parent.parent.parent  # project root
+project_root = Path(__file__).parent.parent.parent.parent  # project root
 weights_dir = project_root / "weights"
 weights_dir.mkdir(parents=True, exist_ok=True)
 
-@hydra.main(version_base="1.3", config_path= str(project_root / "src" / "configs"), config_name=None)
+@hydra.main(version_base="1.3", config_path= str(project_root / "src" / "voicehs" / "configs"), config_name=None)
 def main(model_cfg):
     model_cls = hydra.utils.get_class(f"f5_tts.model.{model_cfg.model.backbone}")
     model_arc = model_cfg.model.arch
