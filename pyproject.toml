@@ -1,0 +1,20 @@
+[project]
+name = "voicehs"
+version = "0.1.0"
+description = "LoRA fine-tuning F5-TTS on VoiceHS dataset"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "peft>=0.17.1",
+    "huggingface-hub>=0.36.0",
+    "ipykernel>=7.1.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "F5-TTS",
+]
+
+[tool.uv.sources]
+f5-tts = { workspace = true }

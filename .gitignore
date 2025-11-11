@@ -1,0 +1,58 @@
+# --- Core project ignores ---
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.DS_Store
+.env
+.env.*
+*.log
+logs/
+tmp/
+.cache/
+.ipynb_checkpoints/
+
+# --- Data / models / experiments ---
+data/
+weights/
+checkpoints/
+output/
+wandb/
+runs/
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+
+# --- Arrow dataset ---
+*.arrow
+*.npy
+*.npz
+*.csv
+*.jsonl
+
+# --- MLX / pruning outputs ---
+*.mlx
+*.onnx
+*.tflite
+*.int8
+*.quant
+
+# --- Local F5-TTS clone (ignore fully) ---
+F5-TTS/
+
+# --- IDE and editor junk ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# --- Audio ---
+*.wav
+
+# --- Internal documentation ---
+plan.md
