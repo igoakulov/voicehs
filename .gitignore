@@ -6,8 +6,7 @@ __pycache__/
 *.pyd
 *.so
 .DS_Store
-.env
-.env.*
+.env*
 *.log
 logs/
 tmp/
@@ -54,5 +53,6 @@ F5-TTS/
 # --- Audio ---
 *.wav
 
-# --- Internal documentation ---
+# --- Internal ---
 plan.md
+src/voicehs/train/lora_test.py
