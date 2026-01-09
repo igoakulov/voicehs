@@ -17,4 +17,4 @@ members = [
 ]
 
 [tool.uv.sources]
-f5-tts = { workspace = true }
+f5_tts = { path = "F5-TTS/src", editable = true }

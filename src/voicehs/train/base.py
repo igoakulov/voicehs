@@ -3,7 +3,7 @@
 from huggingface_hub import hf_hub_download
 from pathlib import Path
 
-def download_base_weights(project_dir: str = "weights", symlink_name: str = "base.safetensors"):
+def download_base_weights(project_dir: str = "ckpts", symlink_name: str = "pretrained_rus.safetensors"):
     """
     Download only the v2 checkpoint from HF to the default cache,
     then create a symlink in the project folder.

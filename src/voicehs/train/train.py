@@ -14,7 +14,7 @@ from f5_tts.model import CFM
 from src.voicehs.train.lora import DiTLora, TrainerLora, lora_config
 
 project_root = Path(__file__).parent.parent.parent.parent  # project root
-weights_dir = project_root / "weights"
+weights_dir = project_root / "ckpts"
 weights_dir.mkdir(parents=True, exist_ok=True)
 
 def print_mem(tag=""):

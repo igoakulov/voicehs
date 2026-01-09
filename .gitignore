@@ -20,6 +20,7 @@ checkpoints/
 output/
 wandb/
 runs/
+ckpts/
 *.pt
 *.bin
 *.ckpt
